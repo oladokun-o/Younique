@@ -1,5 +1,9 @@
 const config = {
-    production: {},
+    production: {
+        PORT: process.env.PORT,
+        SERVER_DATABASE: process.env.MONGODB_URI,
+        CLIENT_DATABASE: process.env.SQL_URI_DEV
+    },
     development: {
         PORT: process.env.PORT,
         SERVER_DATABASE: process.env.MONGODB_URI_DEV,
@@ -9,5 +13,5 @@ const config = {
 
 
 exports.get = function get(env) {
-    return config[env] || config.development
+    return config[env] || config.production
 }

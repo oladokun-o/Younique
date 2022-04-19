@@ -8,14 +8,24 @@ html.theme-light
 		//bootstrap
 		link(rel='stylesheet', href='/css/bootstrap.min.css')
 		link(rel='stylesheet', href='/css/bootstrap-grid.min.css')
+		link(rel='stylesheet', href='/bootstrap-icons.css')
 		//font icons
 		link(rel='stylesheet', href='/all.css')
 		//stylesheets
-		//link(rel='stylesheet', href='')
+		link(rel='stylesheet', href='/css/style.css')
+		link(rel='stylesheet', href='/css/animations.css')
+		link(rel='stylesheet', href='/admin/css/style.css')
+		//pre scripts
+		script(src="/jquery.min.js")
+		script(src="/admin/js/prereqs.js") 
+		script.
+			var title = '!{title}'
+		
 	body
 		block content
 		
-		script(src="/jquery.min.js")
-		script(src="js/bootstrap.min.js")
+		script(src="/js/bootstrap.min.js")
+		script(src="/admin/js/ui.js") 
+		script(src="/admin/js/reqs.js") 
 
 

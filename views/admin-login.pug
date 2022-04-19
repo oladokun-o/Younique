@@ -1,1 +1,23 @@
 extends admin-layout
+
+block content
+	link(rel='stylesheet', href='/admin/css/login.css')
+	section.js-full-height.d-flex.justify-content-center.p-3.align-items-center
+		.container
+			.row.justify-content-center.p-3.align-items-center
+				.col-md-6.col-lg-5.col-12
+					.login-wrap.p-0
+						h3.mb-4.text-center.pb-4 Welcome
+						form.signin-form.admin-form
+							.form-group.mb-3
+								input.form-control(autocomplete="off" type='text' placeholder='Username' required='')
+							.form-group.mb-3
+								input#password-field.form-control(autocomplete="off" type='password' placeholder='Password' required='')
+							.form-group.mb-3
+								button.primary-btn(type='submit') Sign In
+							.form-group.col-12
+								.row 
+									.col-6
+										a(href='#') Forgot Password? 
+									.col-6.text-end
+										a(href='/') Go to store

@@ -1,0 +1,47 @@
+.primary-btn {
+    background-color: black;
+    color: white;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.primary-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.admin-form input,
+.admin-form input:-webkit-autofill,
+.admin-form input:-webkit-autofill:hover, 
+.admin-form input:-webkit-autofill:focus, 
+.admin-form input:-webkit-autofill:active {
+    border: none;
+    background-color: #0000000f !important;
+    color: white;
+    font-weight: lighter;
+    box-shadow: 0 5px 5px #0000000f;
+}
+
+.admin-form input:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: 0 5px 5px #0000000f !important;
+}
+
+.admin-form input::placeholder {
+    color: black;
+}
+
+.admin-form input[type="search"] {
+    background: white !important;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    width: 100%;    
+    font-weight: lighter;
+}

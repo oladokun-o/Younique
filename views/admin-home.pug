@@ -1,0 +1,60 @@
+extends admin-layout
+
+block content
+	link(rel='stylesheet', href='/admin/css/home.css')
+	.container-fluid.app
+		.row
+			.col-12.col-md-3.section-1.section.p-4.p-md-2.d-none.d-md-block
+				.col-12.d-flex.justify-content-start.align-items-center.mb-2.logo-section.px-md-3.px-lg-5.pt-3
+					a(href="/admin/home")
+						.logo-box
+							img(src="/img/logo/logo.png", alt="Younique")
+					button.d-block.d-md-none.menu-btn.close(onclick="closeMenu($('.section-1'))")
+						i.bi.bi-x-lg
+				.col-12.px-md-3.px-lg-5.py-4.menu-section
+					mixin navitems(item, icon, stat)
+						li.nav-item.mb-3( class=stat title=item onclick=`navigate(this)` id=item dest=item type="nav" ) 
+							i( class=icon )
+							| #{item}
+					nav.nav.flex-column
+						+navitems('dashboard', 'bi bi-box-seam', 'inactive dashboard')
+						+navitems('products', 'bi bi-box-seam', 'inactive products')
+						+navitems('customers', 'bi bi-people', 'inactive customers')
+						+navitems('orders', 'bi bi-cart', 'inactive orders')
+						+navitems('transactions', 'bi bi-wallet', 'inactive transactions')
+						+navitems('settings', 'bi bi-sliders', 'inactive settings')
+						li.nav-item.mb-3.inactive(title="Logout" onclick="navigate(this)" id="logout" type="log")
+							i.bi.bi-box-arrow-right
+							| logout
+			.col-12.col-md-9.section-2.section.px-4.py-4
+				.col-12.header
+					.row 
+						.col-12.col-md-4.col-md-5
+							h2.dest
+						.col-8.col-md-5.d-flex
+							form.admin-form.position-relative
+								input(type="search", name="", placeholder="Search..").position-relative
+								span.search-icon
+									i.bi.bi-search
+							button.d-block.d-md-none.menu-btn(onclick="openMenu($('.section-1'))")
+								i.bi.bi-list
+							.col.text-end.d-none.d-md-block.p-1
+								a(href="#" title="View store").view-store-btn View store
+									i.bi.bi-shop.mx-2
+						.col-2.d-flex.justify-content-center.align-items-start.position-relative
+							button.d-none.d-md-block.menu-btn.notification.mx-3(title="Notifications")
+								i.bi.bi-bell
+							.user-profile.position-relative(title=username)
+								i.bi.bi-person
+							.user-options.menu-section.d-none
+								mixin useroptions(item, icon, stat)
+									li.nav-item.mb-3( class=stat title=item onclick=`navigate(this)` id=item dest=item type="opt" ) 
+										i( class=icon )
+										| #{item}
+								ul
+									+useroptions('settings', 'bi bi-sliders', 'inactive')
+									li.nav-item.mb-3.inactive(title="Logout" onclick="navigate(this)" id="logout" type="log")
+										i.bi.bi-box-arrow-right
+										| logout
+				.col-12.pages
+

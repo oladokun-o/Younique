@@ -42,6 +42,7 @@ app.use(express.static('public'))
 app.use(express.static('node_modules/bootstrap/dist'));
 app.use(express.static('node_modules/jquery/dist'));
 app.use(express.static('node_modules/@fortawesome/fontawesome-free/css'));
+app.use(express.static('node_modules/bootstrap-icons/font'));
 app.use(express.static('node_modules/@popperjs/core/dist/cjs/popper.js'));
 
 // catch 404 and forward to error handler

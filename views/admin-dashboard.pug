@@ -1,0 +1,24 @@
+.col-12.page.p-4.p-md-5.dashboard
+	.row
+		.col-12.col-md-8.py-5
+			h1 Welcome #{user} 
+			h4.fw-light Store is running smoothly! You have
+				a(href="#")
+					span.fw-bold  3 orders pending!
+			h1.time.fw-light.pt-4 9:25
+			h2.date.fw-light Sun, Apr 17
+			.container-fluid.dashboard-nav.dashboard-nav-1.pt-5.mt-4.pb-0.px-0
+				button(title="Add new user" onclick="navigate(this)" dest="settings" action="newuser" type="opt")
+					i.bi.bi-person-plus-fill
+					| Add New User
+				button(title="Logout" onclick="navigate(this)" id="logout" type="log")
+					i.bi.bi-box-arrow-right.m-0
+					| 
+		.col-12.col-md-4.p-4.p-md-5.dashboard-nav
+			.row 
+				button.mb-4(title="Manage products" onclick="navigate(this)" dest="products" type="opt")
+					i.bi.bi-inboxes-fill
+					p Manage Products
+				button(title="Check orders" onclick="navigate(this)" dest="orders" type="opt")
+					i.bi.bi-cart-plus-fill
+					p Check Orders

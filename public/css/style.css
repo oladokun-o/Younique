@@ -1,3 +1,12 @@
+:root {
+    --primary-bg: #0909091a;
+    --secondary-bg: #090909;
+}
+
+.full-height {
+    height: 100%;
+}
+
 .bg-none {
     background: transparent;
 }

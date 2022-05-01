@@ -1,0 +1,43 @@
+.primary-input {
+    border: transparent;
+    border-radius: 5px;
+    background-color: var(--primary-bg);
+}
+
+.primary-button {
+    border: transparent;
+    border-radius: 5px;
+    background-color: var(--secondary-bg);
+    color: white;
+    padding: 10px 15px;
+    font-weight: lighter;
+}
+
+.primary-button:hover {
+    transition: all .50s;
+    color: black;
+    background-color: var(--primary-bg);
+}
+
+.primary-button i.right {
+    margin-right: 5px;
+}
+
+.primary-button i.left {
+    margin-left: 5px;
+}
+
+form.search {
+    border: transparent;
+    border-radius: 5px;
+    background-color: var(--primary-bg);
+    padding: 7px 10px;
+}
+
+form.search input,
+form.search button {
+    border: transparent;    
+    background: transparent;
+    outline: none;
+    font-weight: lighter;
+}

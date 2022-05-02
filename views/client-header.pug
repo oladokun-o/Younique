@@ -1,2 +1,29 @@
-.border.text-center
-	h1 header
+header.py-3.px-5.shadow-sm
+	nav.navbar.navbar-expand-lg.navbar-light.col-12.py-0
+		.col-2
+			a.navbar-brand(href='#').d-flex.justify-content-center
+				img(src="/img/logo/logo.png", alt="Younique")
+		button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#toggleMobileMenu' aria-control='toggleMobileMenu' aria-expanded='false' aria-lable='toggle navigation')
+			span.navbar-toggler-icon
+		.searchbar.d-none.d-lg-block.col-4
+			form.search
+				button(type='submit')
+					i.fa.fa-magnifying-glass
+				input(type='text' placeholder='Search...')
+		#toggleMobileMenu.collapse.navbar-collapse
+			ul.navbar-nav.ms-auto.text-center
+				li
+					a.nav-link(href='#') Home
+				||
+				li
+					a.nav-link(href='#') About
+				||
+				li
+					a.nav-link(href='#') Shop
+				||
+				li
+					a.nav-link(href='#') Help
+				li.nav-link
+					button.primary-button
+						i.right.bi.bi-bag-fill
+						a Your Cart

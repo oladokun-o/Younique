@@ -1,6 +1,6 @@
 # Younique
 
-## <a href="https://yo-unique-app.herokuapp.com/">DEMO</a>
+## <a href="https://younique-store.herokuapp.com/">DEMO</a>
 
 ## Installation
 

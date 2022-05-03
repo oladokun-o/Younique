@@ -7,7 +7,7 @@
 .primary-button {
     border: transparent;
     border-radius: 5px;
-    background-color: var(--secondary-bg);
+    background-color: var(--secondary-bg) !important;
     color: white;
     padding: 10px 15px;
     font-weight: lighter;
@@ -16,7 +16,7 @@
 .primary-button:hover {
     transition: all .50s;
     color: black;
-    background-color: var(--primary-bg);
+    background-color: var(--primary-bg) !important;
 }
 
 .primary-button i.right {
@@ -32,6 +32,7 @@ form.search {
     border-radius: 5px;
     background-color: var(--primary-bg);
     padding: 7px 10px;
+    display: flex;
 }
 
 form.search input,
@@ -40,4 +41,13 @@ form.search button {
     background: transparent;
     outline: none;
     font-weight: lighter;
+}
+
+form.search button[type="button"] {
+    width: 10%;
+    pointer-events: none;
+}
+
+form.search input {
+    width: 90%;
 }

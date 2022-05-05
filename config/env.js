@@ -13,5 +13,5 @@ const config = {
 
 
 exports.get = function get(env) {
-    return config[env] || config.production
+    return config[env] || config.development
 }

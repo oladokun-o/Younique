@@ -273,6 +273,12 @@
 }  
 
 @media only screen and (max-width: 425px) { 
+    .section-1 {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
     .dashboard .col-12:first-child {
         height: 80%;
     }

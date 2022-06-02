@@ -6,6 +6,10 @@
 @import url(../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css);
 /*ignore*/
 
+.home-page {
+    background: #F6F6F6;
+}
+
 .home-page h1 {
     font-weight: lighter;
 }

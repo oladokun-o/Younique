@@ -1,29 +1,56 @@
 header.py-3.px-5.shadow-sm
-	nav.navbar.navbar-expand-lg.navbar-light.col-12.py-0
+	nav.navbar.navbar-expand-lg.navbar-light.col-12.py-0.position-relative
 		.col-2
-			a.navbar-brand(href='#').d-flex.justify-content-center
-				img(src="/img/logo/logo.png", alt="Younique")
-		button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#toggleMobileMenu' aria-control='toggleMobileMenu' aria-expanded='false' aria-lable='toggle navigation')
+			a.navbar-brand.d-flex.justify-content-center(href='#')
+				img(src='/img/logo/logo.png' alt='Younique')
+		button#menuButton.navbar-toggler(type='button')
 			span.navbar-toggler-icon
-		.searchbar.d-none.d-lg-block.col-4
-			form.search
+		.searchbar.d-none.d-lg-flex.col-4
+			form#headerSearchForm.search
 				button(type='button')
 					i.bi.bi-search
-				input(type='text' placeholder='Search...').border.border-dark
-		#toggleMobileMenu.collapse.navbar-collapse
+				input#headerSearchInput(type='text' placeholder='Search...')
+		.d-none.d-lg-block
 			ul.navbar-nav.ms-auto.text-center
 				li
 					a.nav-link(href='#') Home
-				||
+				| |
 				li
-					a.nav-link(href='#') About
-				||
+					a.nav-link(href='#') About Us
+				| |
 				li
 					a.nav-link(href='#') Shop
-				||
+				| |
 				li
 					a.nav-link(href='#') Help
 				li.nav-link
 					button.primary-button
-						i.right.bi.bi-bag-fill
+						i.bi.bi-bag-fill
 						a Your Cart
+		#Menu.d-block.d-lg-none.small-menu.hide-menu
+			.container-fluid.full-height 
+				.row.full-height 
+					.menu-void.col-6(onclick='closeMenu()')
+					.col-6.menu-.shadow
+						button.close-btn(onclick='closeMenu()')
+							i.bi.bi-x-lg
+						ul.menu-links
+							li
+								a
+									i.bi.bi-house
+									span.nav-link(href='#') Home
+							li
+								a
+									i.bi.bi-journals
+									span.nav-link(href='#') About Us
+							li
+								a
+									i.bi.bi-shop
+									span.nav-link(href='#') Shop
+							li
+								a
+									i.bi.bi-info
+									span.nav-link(href='#') Help
+							button.primary-button.cart-btn
+								i.right.bi.bi-bag-fill
+								a Your Cart

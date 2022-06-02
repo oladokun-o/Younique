@@ -1,0 +1,21 @@
+.home-page {
+    background: #F6F6F6;
+}
+
+.home-page h1 {
+    font-weight: lighter;
+}
+
+.home-page hr {
+    width: 15%;
+}
+
+.home-page form.search {
+    padding: 0 0;
+    padding-left: 10px;
+}
+
+.home-page button[type="submit"] {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

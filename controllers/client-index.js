@@ -6,5 +6,8 @@ module.exports = {
     },
     getContact: async function (req,res) {
         res.render('client-contact', {title: 'contact'});
-    }
+    },
+    getFeaturedImages: async function (req,res) {
+        res.send('hello')
+    },
 }

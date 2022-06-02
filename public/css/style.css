@@ -1,6 +1,11 @@
 :root {
     --primary-bg: #0909091a;
     --secondary-bg: #090909;
+    --border: #7A7A7A;
+}
+
+body {
+    height: 100%;
 }
 
 .full-height {
@@ -9,4 +14,8 @@
 
 .bg-none {
     background: transparent;
+}
+
+.border- {
+    border: 1px solid var(--border);
 }

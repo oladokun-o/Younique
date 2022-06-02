@@ -13,6 +13,7 @@ var http = require('http');
 var createHttpError = require("http-errors");
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const path = require('path');
 //var compression = require('compression');
 const app = express();
 
@@ -39,12 +40,19 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static('public'))
+app.use(express.static('db'))
+// Allow assets directory listings
+const serveIndex = require('serve-index'); 
+app.use('/db', serveIndex(path.join(__dirname, '/db')));
 app.use(express.static('node_modules/bootstrap/dist'));
 app.use(express.static('node_modules/bootstrap-icons/font/'));
 app.use(express.static('node_modules/jquery/dist'));
 app.use(express.static('node_modules/@fortawesome/fontawesome-free/css'));
 app.use(express.static('node_modules/bootstrap-icons/font'));
 app.use(express.static('node_modules/@popperjs/core/dist/cjs/popper.js'));
+app.use(express.static('node_modules/owl.carousel/dist/assets'));
+app.use(express.static('node_modules/owl.carousel/dist/assets'));
+app.use(express.static('node_modules/owl.carousel/dist'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -27,6 +27,10 @@
     margin-left: 5px;
 }
 
+.heading {
+    font-weight: lighter;
+}
+
 form.search {
     border: transparent;
     border-radius: 5px;
@@ -50,4 +54,41 @@ form.search button[type="button"] {
 
 form.search input {
     width: 90%;
+}
+
+.product {
+    width: 100%;
+    height: 250px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.product:hover img {
+    -webkit-animation:kenburns-bottom 1s ease-out both;
+    animation:kenburns-bottom 1s ease-out both;
+}
+
+.product-veil {
+    background: #00000096;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 8px !important;
+    word-wrap: break-word;
 }

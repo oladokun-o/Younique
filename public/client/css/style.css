@@ -31,7 +31,7 @@
     font-weight: lighter;
 }
 
-form.search {
+.form {
     border: transparent;
     border-radius: 5px;
     background-color: var(--primary-bg);
@@ -39,20 +39,20 @@ form.search {
     display: flex;
 }
 
-form.search input,
-form.search button {
+.form input,
+.form button {
     border: transparent;    
     background: transparent;
     outline: none;
     font-weight: lighter;
 }
 
-form.search button[type="button"] {
+.form button[type="button"] {
     width: 10%;
     pointer-events: none;
 }
 
-form.search input {
+.form input {
     width: 90%;
 }
 
@@ -91,4 +91,9 @@ form.search input {
     font-weight: bolder;
     font-size: 8px !important;
     word-wrap: break-word;
+}
+
+.section {
+    width: 100%;
+    border-top: 1px solid #0000001c;
 }

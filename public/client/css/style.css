@@ -164,8 +164,8 @@ button.filled {
 
 .cart-button-bottom {
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 15px;
+    right: 10px;
 }
 
 .cart-button {

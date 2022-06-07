@@ -38,7 +38,7 @@ $('.featured-products-slider .slide').addClass('col-12 col-md-5').html(`
             <div class="col-12 center-item">
                 <img class="image-loader" src="${imageLoaderSrc}" />
             </div>
-            <div class="product-details">
+            <div class="product-details p-4">
                 <p class="name">product name</p>
                 <span class="price"><span class="currency">$</span>0.00</span>
             </div>

@@ -111,6 +111,11 @@
 .product-link {
     color: black;
     text-decoration: none;
+    width: 100%;
+}
+
+.featured-products .product-details {
+    font-size: 1.2em !important;
 }
 
 .section {

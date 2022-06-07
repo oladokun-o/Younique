@@ -1,8 +1,9 @@
-.product-section-01 .col-4,
-.product-section-01 .col-8 {
-    height: 400px;
+.product-section-01 .col-md-3 .product {
+    height: 200px !important;
 }
 
-.product-section-01 .col-md-8 .col-6 .product {
-    height: 100px !important;
+.product-section-01 button {
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
 }

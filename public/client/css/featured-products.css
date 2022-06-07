@@ -7,6 +7,7 @@
     height: 100%;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
+    width: 50%;
 }
 
 .slides::-webkit-scrollbar {

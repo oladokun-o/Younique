@@ -252,7 +252,7 @@ footer ul li a {
 }
 
 .modal .modal-content {
-    height: 100%;
+    height: fit-content;
     overflow: hidden;
 }
 

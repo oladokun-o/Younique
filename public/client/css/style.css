@@ -11,6 +11,7 @@
     color: white;
     padding: 10px 15px;
     font-weight: lighter;
+    position: relative;
 }
 
 .primary-button:hover {
@@ -93,7 +94,58 @@
     word-wrap: break-word;
 }
 
+.product-box {
+    width: 100%;
+}
+
+.product-details {
+    padding: 15px 0px;
+    color: black;
+}
+
+.product-details p {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.product-link {
+    color: black;
+    text-decoration: none;
+}
+
 .section {
     width: 100%;
     border-top: 1px solid #0000001c;
+}
+
+.cart-button-bottom {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.cart-button {
+    padding: 6px 20px 5px 15px;
+}
+
+.cart-button span {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    padding: 0 !important;
+    font-size: small;
+}
+
+footer {
+    background: var(--primary-bg);
+}
+
+footer ul li {
+    margin-top: 5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
 }

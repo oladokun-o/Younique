@@ -1,0 +1,8 @@
+.product-section-01 .col-4,
+.product-section-01 .col-8 {
+    height: 400px;
+}
+
+.product-section-01 .col-md-8 .col-6 .product {
+    height: 100px !important;
+}

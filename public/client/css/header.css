@@ -58,7 +58,7 @@ header {
     width: 100%;
     height: 100vh;
     background-color: transparent;
-    padding: 76px 0px;
+    padding: 76px 0 0 0px;
 }
 
 .hide-menu {
@@ -106,7 +106,7 @@ header {
 }
 
 .cart-btn {
-    width: 100%;
+    width: fit-content;
 }
 
 .close-btn {

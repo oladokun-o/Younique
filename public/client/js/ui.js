@@ -32,10 +32,22 @@ menuLinks.forEach((link) => { link.addEventListener('click', closeMenu) })
 
 //slides
 var imageLoaderSrc = 'img/icon/shopping-basket.gif';
-$('.featured-products-slider .slide').addClass('col-12 col-md-5').html(`<img class="image-loader" src="${imageLoaderSrc}" />`)
+$('.featured-products-slider .slide').addClass('col-12 col-md-5').html(`
+    <a class="product-link" href="#">
+        <div class="product-box">
+            <div class="col-12 center-item">
+                <img class="image-loader" src="${imageLoaderSrc}" />
+            </div>
+            <div class="product-details">
+                <p class="name">product name</p>
+                <span class="price"><span class="currency">$</span>0.00</span>
+            </div>
+        </div>
+    </a>
+`)
 
 //slider
-const featuredProductsImgLocation = 'db/';
+const featuredProductsImgLocation = 'db/featured-images/';
 var slideBox =  $('.featured-products-slider .slides'),
     slides = document.querySelectorAll('.featured-products-slider .slide');  
 
@@ -80,7 +92,15 @@ $.when(getSlideImages()).done(function(data) {
         let newSlides = array_filled(imgsLength, 'div');                                 
         $.each(newSlides, function(index, slide) {
             $(slide).addClass('new-slide');
-            $(slide).html(`<img class="slide-image" id="${index}" src="${imgs[index]}" />`);
+            $(slide).html(`
+            <div class="col-12">
+                <img class="slide-image" id="${index}" src="${imgs[index]}" />
+                <div class="product-details">
+                    <h3 class="name">product name</h3>
+                    <h4 class="price"><span class="currency"></span>0.00</h4>
+                </div>
+            </div>
+            `);
             $('.owl-carousel').owlCarousel('add', $(slide)).owlCarousel('update');
         })
         removeDemoSlides();        

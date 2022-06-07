@@ -1,7 +1,7 @@
 header.py-2.px-5.shadow-sm
 	nav.navbar.navbar-expand-lg.navbar-light.col-12.py-0.position-relative
 		.col-2
-			a.navbar-brand.d-flex.justify-content-center(href='#')
+			a.navbar-brand.d-flex.justify-content-center(href='/')
 				img(src='/img/logo/logo.png' alt='Younique')
 		button#menuButton.navbar-toggler(type='button')
 			span.navbar-toggler-icon
@@ -24,9 +24,9 @@ header.py-2.px-5.shadow-sm
 				li
 					a.nav-link(href='#') Help
 				li.nav-link
-					button.primary-button
+					button(title="Your Cart").primary-button.cart-button
 						i.bi.bi-bag-fill
-						a Your Cart
+						span 0
 		#Menu.d-block.d-lg-none.small-menu.hide-menu
 			.container-fluid.full-height 
 				.row.full-height 
@@ -51,6 +51,10 @@ header.py-2.px-5.shadow-sm
 								a
 									i.bi.bi-info
 									span.nav-link(href='#') Help
-							button.primary-button.cart-btn
-								i.right.bi.bi-bag-fill
-								a Your Cart
+							.d-flex.justify-content-center
+								button(title="Your Cart").primary-button.cart-btn.cart-button
+									i.right.bi.bi-bag-fill
+									span 0
+		button(title="Your Cart").primary-button.cart-button-bottom.cart-button.d-block.d-lg-none.m-3.my-4.m-md-4.shadow
+			i.bi.bi-bag-fill
+			span 0

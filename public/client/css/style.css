@@ -251,7 +251,7 @@ footer ul li a {
 }
 
 .modal .modal-content {
-    height: 50vh;
+    height: 100%;
     overflow: hidden;
 }
 

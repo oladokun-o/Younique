@@ -127,3 +127,25 @@ $('.slides-control .prev').on('click', function() {
 $('.slides-control .next').on('click', function() {
     owl.trigger('next.owl.carousel');
 })
+
+//products 
+$('.product-contn .product').on('click', function(e) {
+    openModal(e)
+})
+
+function openModal(data) {
+    $('.modal').fadeIn('fast').removeClass('d-none').addClass('d-flex');
+    let content = $(data.currentTarget).html();
+    $('.modal-content').html(content+`
+        <div class="product-btns">
+            <button type="button" title="add to cart"> <i class="bi bi-bag"> </i></button>
+            <button type="button" title="Save to favorites"><i class="bi bi-bag-heart"> </i></button>
+            <button type="button" title="Share"> <i class="bi bi-share"></i></button>
+            <button type="button" title="Learn more"> <i class="bi bi-box-arrow-up-right"></i></button>
+        </div>
+    `)
+}
+
+function closeModal(data) {
+    $('.modal').fadeOut('fast').removeClass('d-flex').addClass('d-none');
+}

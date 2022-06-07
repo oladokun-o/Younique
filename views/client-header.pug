@@ -58,3 +58,8 @@ header.py-2.px-5.shadow-sm
 		button(title="Your Cart").primary-button.cart-button-bottom.cart-button.d-block.d-lg-none.m-3.my-4.m-md-4.shadow
 			i.bi.bi-bag-fill
 			span 0
+.modal.p-2.d-none 
+	.modal-veil(onclick="closeModal()")
+	button.close-modal.m-md-4.m-3.primary-button(onclick="closeModal()")
+		i.bi.bi-x-lg
+	.modal-content.p-2.col-10.col-md-auto.pt-3

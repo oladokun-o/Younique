@@ -187,6 +187,7 @@ button.filled {
     position: fixed;
     bottom: 15px;
     right: 10px;
+    font-size: 25px;
 }
 
 .cart-button {

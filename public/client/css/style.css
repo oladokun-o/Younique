@@ -265,4 +265,5 @@ footer ul li a {
 .modal .product-btns button {
     margin: 0 5px;
     position: relative !important;
+    font-size: large;
 }

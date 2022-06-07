@@ -101,17 +101,56 @@
 .product-details {
     padding: 15px 0px;
     color: black;
+    position: relative;
 }
 
 .product-details p {
-    margin: 0;
+    margin: 5px 0px;
     text-transform: capitalize;
+}
+
+.product-details .price {
+    position: relative;
+    width: 100%;
+    display: block;
 }
 
 .product-link {
     color: black;
     text-decoration: none;
     width: 100%;
+}
+
+.product-link:hover {
+    color: black;
+}
+
+.product-btns {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    z-index: 100;
+}
+
+.product-btns button {
+    margin: 0 10px 0 0;
+    position: relative !important;
+    background: var(--primary-bg);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px #00000011;
+}
+
+.product-btns button:hover {
+    background-color: var(--secondary-bg);
+    color: white;
+}
+
+button.filled {
+    background: black;
+    color: white;
 }
 
 .featured-products .product-details {
@@ -135,7 +174,7 @@
 
 .cart-button span {
     position: absolute;
-    top: 0px;
+    top: 3px;
     right: 10px;
     padding: 0 !important;
     font-size: small;

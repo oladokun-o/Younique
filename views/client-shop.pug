@@ -1,0 +1,11 @@
+extends client-layout
+
+block content
+    include client-header
+    .app
+        include client-home-landing-page 
+        script(src="/client/js/shop.js")
+        include client-featured-categories
+        include client-newsletter 
+        include client-product-section-02
+        include client-footer

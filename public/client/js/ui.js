@@ -9,7 +9,7 @@ headerSearchForm.addEventListener('click', function() {
 //menu (side menu)
 
 var menuButton = document.getElementById('menuButton'),
-menu = document.getElementById('Menu'), menuLinks = menu.querySelectorAll('.nav-link');
+menu = document.getElementById('Menu'), menuLinks = menu.querySelectorAll('.menu-links li');
 
 menuButton.addEventListener('click', function() {
     if (menu.classList.contains('hide-menu')) {

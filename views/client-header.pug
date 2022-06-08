@@ -1,4 +1,4 @@
-header.py-2.px-5.shadow-sm
+header.py-2.px-4.px-md-5.shadow-sm
 	nav.navbar.navbar-expand-lg.navbar-light.col-12.py-0.position-relative
 		.col-2
 			a.navbar-brand.d-flex.justify-content-center(href='/')
@@ -16,10 +16,10 @@ header.py-2.px-5.shadow-sm
 					a.nav-link(href='/') Home
 				| |
 				li
-					a.nav-link(href='/about-us') About Us
+					a.nav-link(href='/shop') Shop
 				| |
 				li
-					a.nav-link(href='/shop') Shop
+					a.nav-link(href='/about-us') About Us
 				| |
 				li
 					a.nav-link(href='/help') Help
@@ -36,21 +36,21 @@ header.py-2.px-5.shadow-sm
 							i.bi.bi-x-lg
 						ul.menu-links
 							li
-								a
+								a(href='/')
 									i.bi.bi-house
-									span.nav-link(href='/') Home
+									span.nav-link Home
 							li
-								a
-									i.bi.bi-journals
-									span.nav-link(href='/About Us') About Us
-							li
-								a
+								a(href='/Shop')
 									i.bi.bi-shop
-									span.nav-link(href='/Shop') Shop
+									span.nav-link Shop
 							li
-								a
+								a(href='/About Us')
+									i.bi.bi-journals
+									span.nav-link About Us
+							li
+								a(href='/Help')
 									i.bi.bi-info
-									span.nav-link(href='/Help') Help
+									span.nav-link Help
 							.d-flex.justify-content-center
 								button(title="Your Cart").primary-button.cart-btn.cart-button
 									i.right.bi.bi-bag-fill

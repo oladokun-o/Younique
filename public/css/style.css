@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 :root {
-    --primary-bg: #0909091a;
+    --primary-bg: #e5e5e5;
     --secondary-bg: #090909;
     --border: #7A7A7A;
 }
@@ -9,6 +9,10 @@
 body {
     height: 100%;
     font-family: 'Poppins';
+}
+
+img {
+    width: 100%;
 }
 
 .full-height {

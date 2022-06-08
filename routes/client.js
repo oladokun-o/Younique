@@ -6,5 +6,6 @@ router
     .get('/', control.getHome)
     .get('/contact', control.getContact)
     .get('/featured_images', control.getFeaturedImages)
+    .get('/shop', control.getShop)
 
 module.exports = router;

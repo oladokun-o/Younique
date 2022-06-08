@@ -114,8 +114,12 @@ header {
     border: none;
     font-size: 25px;
     position: absolute;
-    right: 43px;
+    right: 20px;
     top: 22px;
+}
+
+.menu-links a {
+    text-decoration: none;
 }
 
 .menu-links i {

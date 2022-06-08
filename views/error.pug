@@ -1,2 +1,9 @@
-.text-center.container-fluid.p-5.mt-5
-	h1 #{message}
+extends client-layout
+
+block content
+	include client-header
+	.app.px-5
+		h1.py-5= message
+		script.
+			$('.cart-button').addClass('d-none');
+		

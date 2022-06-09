@@ -15,3 +15,27 @@
     bottom: 0;
     text-transform: uppercase;
 }
+
+.product-section-02 .product-box {
+    width: fit-content;
+}
+
+.product-section-02 .product {
+    height: 120px !important;
+    width: 150px !important;
+}
+
+.product-section-02 .product-details {
+    padding: 0 10px;
+}
+
+.product-section-02 .product-btns {
+    left: 0;
+    right: unset;
+    bottom: 10px;
+    padding: 0 10px;
+}
+
+.product-section-02 .product-contn {
+    display: flex;
+}

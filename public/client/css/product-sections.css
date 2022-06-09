@@ -39,3 +39,84 @@
 .product-section-02 .product-contn {
     display: flex;
 }
+
+.product-bg {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: white;
+}
+
+.product-bg .main {
+    width: 60%;
+    height: 70%;
+}
+
+.product-bg img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.product-thumbnails {
+    position: absolute;
+    z-index: 10;
+    bottom: 0%;
+    width: 100%;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+.product-thumbnails::-webkit-scrollbar {
+    display: none !important;
+}
+
+
+.product-thumbnails .d-flex div {
+    width: 200px !important;
+    border-radius: 2.5px;
+    box-shadow: 0 0 5px #00000013;
+    overflow: hidden;
+    margin: 0 5px;
+}
+
+.product-thumbnails div {
+    width: 600px;
+    margin: 0;
+    padding: 5px;
+}
+
+.product-view {
+    background: var(--primary-bg);
+}
+
+.product-detail {
+    background: white;
+    border-left: 1px solid var(--primary-bg);
+}
+
+.product-detail .details {
+    border-top: 1px solid var(--primary-bg);
+    border-bottom: 1px solid var(--primary-bg);
+}
+
+.product-view .description article {
+    height: 90px;
+}
+
+.scroll {
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+.scroll::-webkit-scrollbar {
+    display: none !important;
+}

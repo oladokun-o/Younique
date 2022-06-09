@@ -1,0 +1,43 @@
+extends client-layout
+
+block content
+	include client-header
+	.app
+		.container-fluid.center-item.product-view
+			.col-12.col-md-10
+				.row.full-height 
+					.col-12.col-md-6.product-bg.position-relative.p-0.center-item.full-height
+						.container-fluid.p-0.d-flex.justify-content-center.align-items-start
+							img(src="/store/jacket/jacket (1).jpg", alt="jacket (1)").position-relative.main
+							.product-thumbnails.m-0.p-0.container.d-flex
+								.d-flex
+									div
+										img(src="/store/jacket/jacket (2).jpg", alt="jacket (2)")
+									div
+										img(src="/store/jacket/jacket (3).jpg", alt="jacket (3)")
+									div
+										img(src="/store/jacket/jacket (4).jpg", alt="jacket (4)")
+									div
+										img(src="/store/jacket/jacket (5).jpg", alt="jacket (5)")
+									div
+										img(src="/store/jacket/jacket (6).jpg", alt="jacket (6)")
+					.col-12.col-md-6.p-5.product-detail
+						.col-12 
+							.container.p-0 
+								h2.heading.name #{product.name}
+								p.review review 
+							.container.px-0.py-3.details 
+								.row
+									h3.heading.col-auto 
+										span.price $
+										| #{product.price}
+									.col.mx-3.p-0.d-flex.justify-content-end.align-items-center
+										select
+											option(disabled) Select Color 
+											option(value="Blue") blue 
+							.container.px-0.py-3.description
+								article.scroll #{product.description}
+								hr.col-4
+								button.primary-button Add To Cart
+		include client-similar-products
+		include client-footer

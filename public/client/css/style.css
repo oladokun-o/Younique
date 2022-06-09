@@ -252,8 +252,11 @@ footer ul li a {
 }
 
 .modal .modal-content {
-    height: fit-content;
     overflow: hidden;
+}
+
+.modal-content .product-thumnails {
+    display: none !important;
 }
 
 .modal .product-btns {

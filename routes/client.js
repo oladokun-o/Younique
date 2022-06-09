@@ -7,5 +7,6 @@ router
     .get('/contact', control.getContact)
     .get('/featured_images', control.getFeaturedImages)
     .get('/shop', control.getShop)
-
+    .get('/about', control.getAbout)
+    .get('/product/:id', control.getProduct)
 module.exports = router;

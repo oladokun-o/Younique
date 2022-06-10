@@ -42,9 +42,6 @@
 
 .product-bg {
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     background: white;
 }
 
@@ -61,7 +58,7 @@
 }
 
 .product-thumbnails {
-    position: absolute;
+    position: relative;
     z-index: 10;
     bottom: 0%;
     width: 100%;
